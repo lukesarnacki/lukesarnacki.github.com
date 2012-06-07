@@ -1,0 +1,42 @@
+1. Kim jestem.
+
+2. Skąd się wzięła troska o UI / UX.
+  - jak to jest teraz robione w firmach?
+  - jak rozdzielane są obowiązki?
+  - jak być powinno, a jaka jest rzeczywistość?
+
+3. Rails Admin, Active Admin itp.
+  - duża pomoc,
+  - ale też dużo rzeczy pomijanych, nieprzyjazny interface,
+  - jak sprawić, żeby tych rzeczy nie pominąć?
+
+
+4. Kiedy istniejący interface "śmierdzi"?
+  - co z tym możemy zrobić?
+    - czasem wystarczy zamiana elementów miejscami,
+  -
+
+5. Od czego zacząć?
+  - projektowanie, myślenie:
+    - wypisanie use case'ów, przykłady:
+      -
+    - projektowanie z siłami
+    - user stories
+
+6. Co dalej:
+  - pytanie o narzędzia (pewnie odpowiedź będzie balsamiq itp.)
+  - odpowiedź: kartka i ołówek/długopis.
+  - szkice mockupów
+    - zaczynamy od najważniejszego elementu, nie od ramki,
+    - różnica pomiędzy szkicami detali, a szkicami ogólnymi, pokazać
+      rysunki Singera i innych z 37signals:
+      http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals
+  - balsamiq, omnigraffle, inne.
+
+
+7. Twitter Bootstrap
+  - jakie są opcje postawienia:
+    - jako sass,
+    - jako less,
+    - co zyskujemy, jakie są różnice?
+

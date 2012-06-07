@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Podstawy projektowania UX dla programistów</title>
+
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="core/deck.core.css">
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/swiss.css">
+	<link rel="stylesheet" href="style/main.css">
+
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+
+<section class="slide" id="hi">
+	<h1>Cześć :)</h1>
+</section>
+
+<section class="slide" id="whoami">
+	<h2>O sobie samym</h2>
+	<ul>
+		<li class="slide">
+			<h3>Łukasz Sarnacki</h3>
+		</li>
+		<li class="slide">
+			<h3>@lukesarnacki</h3>
+		</li>
+		<li class="slide">
+      <h3>Stoliczku.pl</h3>
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="title-slide">
+	<h1>Podstawy projektowania UX dla programistów</h1>
+</section>
+
+
+<section class="slide" id="how-should-it-look-like">
+  <h2>Cykl życia projektu (Agile)</h2>
+  <img src="img/agile.png" />
+</section>
+
+<section class="slide" id="crud-design">
+  <h1>Jak to wygląda w rzeczywistości?</h1>
+</section>
+
+<section class="slide" id="anyone-designed-admin">
+  <h1>Czy ktoś, kiedyś, gdzieś projektował admina?</h1>
+</section>
+
+<!--<section class="slide" id="besides-admin-designers">
+  <h1>(poza projektantami adminów)</h1>
+</section>
+-->
+<section class="slide" id="what-does-it-look-like">
+  <h2>Cykl życia projektu (według programisty)</h2>
+  <h1>Implementacja</h1>
+  <div class="slide"  style="position: absolute; left: 50%; top: 50%;
+    margin-top: -250px; margin-left: -250px">
+    <img src="img/trollface.jpeg" width="500" />
+  </div>
+</section>
+
+<section class="slide" id="not-a-big-problem">
+  <h2>Nie ma problemu?</h2>
+  <h3>Active Admin</h3>
+  <pre>
+    <code>
+      $> rails generate active_admin:install
+      $> rails generate active_admin:resource [MyModelName]
+    </code>
+  </pre>
+  <h3>Rails Admin</h3>
+  <pre>
+    <code>
+      mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+    </code>
+  </pre>
+</section>
+
+<section class="slide" id="perfectly">
+  <div  style="position: absolute; left: 50%; top: 50%;
+    margin-top: -275px; margin-left: -250px">
+    <img src="img/wybornie.jpeg" style="border: 10px solid #444;"/>
+  </div>
+</section>
+
+<section class="slide" id="problem-begins">
+  <h1 style="font-size: 40px">Problem zaczyna się, gdy potrzebna jest niestandardowa funkcjonalność.</h1>
+</section>
+
+<section class="slide" id="what-is-ux-about">
+	<h2>UX - o co w tym wszystkim chodzi?</h2>
+	<ul>
+		<li class="slide">
+      <strong>User Experience (UX)</strong> - to termin opisujący całość wrażeń jakich doświadcza
+      użytkownik podczas korzystania z produktu interaktywnego. (źródło:
+      wikipedia.org)
+		</li>
+    <li class="slide">
+      <span class="slide strike" id="striked">W budowaniu User Experience chodzi
+      o dobry interfejs użytkownika.</span>
+    </li>
+    <li class="slide">
+      <span class="slide strike" id="striked">W budowaniu User Experience chodzi
+        o użyteczność (usability).</span>
+    </li>
+  </ul>
+  <div class="slide">
+    <img class="fu-image" src="img/fu.jpg"/>
+  </div>
+  <ul>
+    <li class="slide">
+      No to o co chodzi?
+    </li>
+  </ul>
+</section>
+
+<section class="slide" id="ux-pyramid" style="padding-bottom: 20px">
+  <h2>User Experience</h2>
+  <img src="img/ux-pyramid-diagram.jpg" />
+  <em>źródło: <a href="http://www.contrast.ie/blog/make-it-meaningful/">http://www.contrast.ie/blog/make-it-meaningful/</a></em>
+</section>
+
+<section class="slide">
+  <h1>Jak zaprojektować dobrą aplikację?</h1>
+</section>
+
+<section class="slide" id="forces" style="padding-bottom: 20px">
+  <h2>Projektowanie z siłami</h2>
+  <img src="img/forces.png" />
+  <div  class="slide">
+    <em>Prezentacja Ryan'a Singer'a: <a href="http://37signals.com/svn/posts/2294-designing-with-forces-how-to-apply-christopher-alexander-in-everyday-work">http://37signals.com/svn/posts/2294-designing-with-forces-how-to-apply-christopher-alexander-in-everyday-work</a></em>
+  </div>
+</section>
+
+<section class="slide" id="forces-in-admin">
+  <h2>Siły przy projektowaniu "Admina"</h2>
+  <!--<img src="img/forma-crud.png" />-->
+  <iframe width="1000" height="500" frameborder="0" src="http://www.mindmeister.com/maps/public_map_shell/154260439/forma?width=1000&height=800&z=auto&no_share=1&no_logo=1" scrolling="no" style="overflow:hidden">Your browser is not able to display frames.  Please visit the <a href="http://www.mindmeister.com/154260439/forma" target="_blank">mind map: Forma</a> on <a href="http://www.mindmeister.com" target="_blank">Mind Mapping - MindMeister</a>.</iframe>
+</section>
+
+<section class="slide" id="crud-design">
+  <h2>Super, właśnie zaprojektowaliśmy CRUD z filtrami...</h2>
+  <img src="img/active-admin.png" />
+</section>
+
+<section class="slide" id="what-to-design">
+  <h2>Przypadki niestandardowe</h2>
+  <!--<img src="img/forma-niestandardowe.png" />-->
+  <iframe width="1000" height="600" frameborder="0" src="http://www.mindmeister.com/maps/public_map_shell/154255591/forma?width=1000&height=600&z=auto&no_share=1&no_logo=1" scrolling="no" style="overflow:hidden">Your browser is not able to display frames.  Please visit the <a href="http://www.mindmeister.com/154255591/forma" target="_blank">mind map: Forma</a> on <a href="http://www.mindmeister.com" target="_blank">Mind Mapping - MindMeister</a>.</iframe>
+</section>
+
+
+<section class="slide">
+  <h2>Przypadek 1</h2>
+  <ul>
+    <li class="slide">Muszę wypełniać podstawowe dane w profilach restauracji.</li>
+    <li class="slide">Większość danych restauracji można znaleźć na Gastronauci.pl</li>
+  </ul>
+  <img class="slide" src="img/wrug-dane-restauracji.png" />
+</section>
+
+
+<section class="slide">
+  <h2>Przypadek 2</h2>
+  <ul>
+    <li class="slide">Muszę kontaktować się z właścicielami i managerami.</li>
+    <li class="slide">Trzymam swoją korespondencję z właścicielami i managerami na
+      highrise.</li>
+  </ul>
+  <img class="slide" src="img/wrug-kontakt.png" />
+</section>
+
+<section class="slide">
+  <h2>Przypadek 3</h2>
+  <ul>
+    <li class="slide">Podczas zmiany statusu restauracji muszę wysłać emaila z linkiem, numerem
+      referencyjnym i grafiką przycisku do umieszczenia na stronie.</li>
+  </ul>
+  <img class="slide" src="img/wrug-zmiana-statusu.png" />
+</section>
+
+<section class="slide">
+  <h2>Przypadek 4</h2>
+  <ul>
+    <li class="slide">Każda restauracja musi mieć swojego właściciela, który będzie mógł się zalogować w systemie.</li>
+    <li class="slide">Właściciel musi podać swoje dane, żeby konto mogło zostać stworzone.</li>
+  </ul>
+  <img class="slide" src="img/wrug-przypisywanie-pracownika.png" />
+</section>
+
+<section class="slide" id="ux-pyramid-once-more" style="padding-bottom: 20px">
+  <h2>Wróćmy na chwilę</h2>
+  <img src="img/ux-pyramid-diagram.jpg" />
+  <em>źródło: <a href="http://www.contrast.ie/blog/make-it-meaningful/">http://www.contrast.ie/blog/make-it-meaningful/</a></em>
+</section>
+
+<section class="slide" id="where-to-begin" style="padding-bottom: 20px">
+  <h2>Od czego zacząć projektowanie?</h2>
+  <div class="slide">
+    <img src="img/pencil.jpg" />
+    <em>źródło: <a href="http://www.flickr.com/photos/elea/201457176/">http://www.flickr.com/photos/elea/201457176/</a></em>
+  </div>
+</section>
+
+<section class="slide" id="sketch-rs">
+  <h2>Szkicowanie (Ryan Singer - 37signals)</h2>
+  <img src="img/sketch-rs.png" />
+  <em>źródło: <a href="http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals">http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals</a></em>
+</section>
+
+<section class="slide" id="sketch-jd">
+  <h2>Szkicowanie (Jamie Dihiansan - 37signals)</h2>
+  <img src="img/sketch-jd.png" />
+  <em>źródło: <a href="http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals">http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals</a></em>
+</section>
+
+
+<section class="slide">
+  <h1>Dlaczego warto?</h1>
+</section>
+
+<section class="slide" id="">
+  <h2>Co dalej?</h2>
+  <img src="img/dont_make_me_think.jpg" />
+</section>
+
+<section class="slide" id="">
+  <h2>Co dalej?</h2>
+  <h3>UI fundamentals for programmers by Ryan Singer</h3>
+  <iframe
+    src="http://player.vimeo.com/video/6702766?title=0&amp;byline=0&amp;portrait=0&amp;color=b30000"
+    width="600" height="367" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <em>źródło: <a href="http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals">http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals</a></em>
+</section>
+
+<section class="slide" id="">
+  <h2>Co dalej?</h2>
+  <h3>Mockups, sketching:</h3>
+  <ul>
+    <li>mybalsamiq.com</li>
+    <li>Omnigraffle</li>
+    <li>Axure RP Pro</li>
+  </ul>
+  <h3>Mapy myśli:</h3>
+  <ul>
+    <li>mindmeister.com</li>
+  </ul>
+</section>
+
+<section class="slide" id="">
+  <h1>Dziękuję :)</h1>
+</section>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
