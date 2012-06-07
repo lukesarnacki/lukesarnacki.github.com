@@ -669,8 +669,8 @@ pre {
     width: 26.25em;
   }
   .the-header .logo a {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 36px;
+    line-height: 56px;
     letter-spacing: -1px;
   }
   .the-header .nav-global {
@@ -753,7 +753,7 @@ pre {
   }
 }
 /*
-	Not that old computer layout 
+	Not that old computer layout
 */
 @media only screen and (min-width: 1280px) {
   .the-header .unit-inner {
@@ -799,7 +799,7 @@ pre {
   }
 }
 /*
-	Huge-screen layout 
+	Huge-screen layout
 */
 @media only screen and (min-width: 1410px) {
   .the-header .unit-inner {
