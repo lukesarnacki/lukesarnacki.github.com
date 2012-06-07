@@ -242,6 +242,10 @@ pre {
   margin-top: 0;
   margin-bottom: 0;
 }
+h1.entry-title {
+  font-size: 32px;
+  line-height: 32px;
+}
 .unit-article .entry-content h2,
 .unit-article .entry-content h3,
 .unit-article .entry-content h4,
