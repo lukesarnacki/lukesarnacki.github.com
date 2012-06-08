@@ -589,7 +589,7 @@ h1.entry-title {
   margin-right: auto;
 }
 .ie .the-header .logo {
-  width: 26.25em;
+  width: auto;
   float: left;
 }
 .ie .the-header .nav-global {
@@ -766,7 +766,7 @@ h1.entry-title {
     width: 60em;
   }
   .the-header .logo {
-    width: 26.25em;
+    width: auto;
     float: left;
   }
   .the-header .nav-global {
